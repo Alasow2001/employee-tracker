@@ -43,7 +43,7 @@ const MainQuestions = [
     }
 ]
 
-const AddDepartment = [
+const addDepartment = [
     {
         type: 'input',
         name: 'department_name',
@@ -52,7 +52,7 @@ const AddDepartment = [
     }
 ]
 
-const AddRole = [
+const addRole = [
     {
         type: 'input',
         name: 'title',
@@ -71,7 +71,7 @@ const AddRole = [
     }
 ]
 
-const AddEmployee = [
+const addEmployee = [
     {
         type: 'input',
         name: 'first_name',
@@ -96,7 +96,7 @@ const AddEmployee = [
     },
 ]
 
-const UpdateEmployee = [
+const updateEmployee = [
     {
         type: 'list',
         name: 'employee_id',
@@ -111,4 +111,4 @@ const UpdateEmployee = [
     }
 ]
 
-module.exports = {MainQuestions, AddDepartment, AddEmployee, AddRole, UpdateEmployee}
+module.exports = {MainQuestions, addDepartment, addEmployee, addRole, updateEmployee}
