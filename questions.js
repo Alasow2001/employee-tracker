@@ -1,4 +1,4 @@
-const MainQuestions = [
+const mainQuestions = [
     {
         type: 'list',
         name:'option',
@@ -111,4 +111,4 @@ const updateEmployee = [
     }
 ]
 
-module.exports = {MainQuestions, addDepartment, addEmployee, addRole, updateEmployee}
+module.exports = {mainQuestions, addDepartment, addEmployee, addRole, updateEmployee}

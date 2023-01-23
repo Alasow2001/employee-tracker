@@ -7,7 +7,7 @@ const {addDepartment, addEmployee, addRole,
     getDepartmentIds, getEmployeeIds, getRoleIds, updateRoleForEmployee} = require("./db/employeeDatabase");
 
 function init(){
-    inquirer.prompt(questions.MainQuestions).then((answers) => {
+    inquirer.prompt(questions.mainQuestions).then((answers) => {
         switch(answers.option){
             case 'add-department':
                 createDepartment()
@@ -35,7 +35,6 @@ function init(){
                 break;
 
             default:
-                console.log('break');
                 break 
 
         }
@@ -92,11 +91,11 @@ async function createRole(){
 }
 
 async function updateEmployee(){
-    let updateEmployeeRoles = questions.updateRoleForEmployee;
+    let updateEmployeeRoles = questions.updateEmployee;
     updateEmployeeRoles[0].choices = await getEmployeeIds();
     updateEmployeeRoles[1].choices = await getRoleIds();
     inquirer.prompt(updateEmployeeRoles).then((answers) => {
-        updateEmployee(answers.employee_id, answers.role_id).then((response) => {
+        updateRoleForEmployee(answers.employee_id, answers.role_id).then((response) => {
             init();
         })
     })
