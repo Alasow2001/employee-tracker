@@ -1,12 +1,12 @@
 # employee-tracker
 
 ## Objective
-This task was to create an application that would generate an employee tracker, showing all of the different roles. departments, employees related to the former two as well as who their respective manager was, given they had one. The following bellow was the user story for this assignment.
+
+This task was to create an application that would generate an employee tracker, showing all of the different roles. departments, employees related to the former two as well as who their respective manager was, given they had one. The following bellow was the user story for this assignment:
 
 - AS A business owner
 - I WANT to be able to view and manage the departments, roles, and employees in my company
 - SO THAT I can organize and plan my business
-
 
 ## Acceptance Criteria
 
@@ -31,17 +31,25 @@ This task was to create an application that would generate an employee tracker, 
 ## Installation
 
 You will need the following applications installed before using this application: 
+
 - VS CODE
 - MySQL (Have the mysql2 npm package installed so you can use mysql in the vs code terminal)
 - Node.js and NPM packages (console.table, inquirer version 8.2.4)
 
 ## Usage
 
-This can be used to keep track of your employees information
+1. Download the npm packages labelled above by doing the following
+    - npm i console.table
+    - npm i inquirer@8.2.4
+    - npm i mysql2
+2. Log into MySQL through this command: mysql -u root -p. Enter your password and then input the following commands:
+    - source db/schema.sql
+    - source db/seeds.sql
+3. Finally, run this command: npm run start to have the application running
 
 ## Walkthrough video
 
-Link to walkthrough video: 
+Link to walkthrough video: https://drive.google.com/file/d/1NXZ5rj7HIjPNDUb_tB8xqG-H_ZH27GZU/view 
 
 ## License
-MIT
+N/A
